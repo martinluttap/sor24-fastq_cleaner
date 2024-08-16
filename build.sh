@@ -17,6 +17,6 @@ case "$1" in
         docker build . --file ./Dockerfile -t ghcr.io/${GHCR_NAMESPACE}/${PROJ_NAME}:latest
 	;;
 	publish)
-        docker push ghcr.io/${GHCR_NAMESPACE}/${PROJ_NAME}:latest
+        docker push ghcr.io/${GHCR_NAMESPACE}/sor24-${PROJ_NAME}:latest
 	;;
 esac
